@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 511 511" style="enable-background:new 0 0 511 511;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF620B;}
+	.st1{fill:#1AB9FF;}
+</style>
+<g>
+	<g>
+		<rect x="187.7" y="210.7" class="st0" width="145" height="88.9"/>
+		<g>
+			<polygon class="st0" points="121.7,430.4 105.3,415 126.2,395.2 105.3,374.4 121.7,359 156.9,395.2 			"/>
+			<path class="st0" d="M140.4,406.2H88.1c-45,0-81.3-36.2-81.3-81.3s37.4-81.3,82.4-81.3h98.4v22H89.2C56.3,265.6,30,292,30,324.9
+				s26.3,59.2,59.2,59.2h52.3v22H140.4L140.4,406.2z"/>
+			<polygon class="st1" points="391.5,288.6 356.4,252.4 391.5,216.3 408,231.6 387.2,252.4 408,273.3 			"/>
+			<path class="st1" d="M422.9,263.4h-52.3v-22h52.3c32.9,0,59.2-26.3,59.2-59.2v-5.4c0-32.9-26.3-59.2-59.2-59.2H308.2v-22h114.6
+				c45,0,81.3,36.2,81.3,81.3v5.4C504.2,227.2,467.9,263.4,422.9,263.4z"/>
+		</g>
+	</g>
+	<circle class="st1" cx="259.5" cy="109" r="65.1"/>
+	<circle class="st1" cx="259.5" cy="402" r="65.1"/>
+</g>
+</svg>
