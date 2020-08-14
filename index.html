@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <title>GrahamRoss Training | Entrenamiento para la excelencia en ventas</title>
@@ -136,7 +136,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <!--<h5 class="home-banner-text">Elimina la confusión • Conecta con los clientes • Haz crecer tu empresa</h5> <--><br><br>
                 <div class="justify-content-center align-items-center flex-column">
                     <center><button type="button" class="btn  ml-2 w3ls-btn" data-toggle="modal"
-                            data-target="#exampleModal2">COMIENZA TU PROCESO</button></center>
+                            data-target="#exampleModal2" onclick="$('#frmContact')[0].reset();">COMIENZA TU PROCESO</button></center>
                 </div>
             
                 <button type="button" class="btn  w3ls-btn bg-theme" style="margin-top: 30px;" data-toggle="modal" aria-pressed="false"
@@ -209,7 +209,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             acompañarte en el proceso, con nuestra metodología, para crear lo que tú necesitas.</p>
                         <div class="d-sm-flex">
                             <button type="button" class="btnContact" data-toggle="modal"
-                                data-target="#exampleModal2">CONTÁCTANOS</button>
+                                data-target="#exampleModal2" onclick="$('#frmContact')[0].reset();">CONTÁCTANOS</button>
                         </div>
                     </div>
                 </div>
@@ -479,7 +479,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 con mejor actitud. Ahora sólo me enfoco en mí y cómo mejorar, no sólo en los demás. Sinceramente, la
                 clave es saber controlar tu juego interno; si sabes hacerlo, puedes lograr muchísimas cosas que no
                 sabías que podías lograr."</p>
-    </div>
+        </div>
 
         <div class="mySlides">
             <div class="numbertext">2 / 3</div>
@@ -501,14 +501,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 contigo. ¡Seguiremos en la trinchera!"</p>
         </div>
 
-        <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
     </div>
     <br>
 
     <script>
-       /* var slideIndex = 1;
+        var slideIndex = 1;
         showSlides(slideIndex);
 
         function plusSlides(n) {
@@ -533,7 +533,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
-        }*/
+        }
     </script>
     <section class="blog_w3ls align-w3" id="posts">
         <div class="container">
@@ -812,29 +812,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <form id="frmContact" action="#" method="post" class="p-3">
                         <div class="form-group">
                             <label for="txtName" class="col-form-label">Nombre</label>
-                            <input type="text" class="form-control" placeholder=" " id="txtName" name="txtName" required="">
+                            <input type="text" class="form-control" placeholder=" " id="txtName" name="txtName" required>
                         </div>
                         <div class="form-group">
                             <label for="txtPhone" class="col-form-label">Teléfono</label>
-                            <input type="tel" class="form-control" placeholder=" " id="txtPhone" name="txtPhone" required="">
+                            <input type="tel" class="form-control" placeholder=" " id="txtPhone" name="txtPhone" required>
                         </div>
                         <div class="form-group">
                             <label for="txtMail" class="col-form-label">Correo</label>
-                            <input type="email" class="form-control" placeholder=" " id="txtMail" name="txtMail" required="">
+                            <input type="email" class="form-control" placeholder=" " id="txtMail" name="txtMail" required>
                         </div>
                         <div class="form-group">
                             <label for="txtCompany" class="col-form-label">Empresa</label>
-                            <input type="text" class="form-control" placeholder=" " id="txtCompany" name="txtCompany" required="">
+                            <input type="text" class="form-control" placeholder=" " id="txtCompany" name="txtCompany" required>
                         </div>
                         <div class="form-group">
                             <label for="txtHow" class="col-form-label">¿Cómo te podemos ayudar?</label>
-                            <input type="text" class="form-control" placeholder=" " name="txtHow" name="txtHow"  required="">
+                            <input type="text" class="form-control" placeholder=" " id="txtHow" name="txtHow"  required>
                         </div>
                         <div class="sub-w3l">
                             <div class="sub-w3layouts_hub">
                                 <input type="checkbox" id="brand2" value="">
                                 <label for="brand2" class="mb-3">
                                     <span></span>Acepto los términos y condiciones</label>
+                            </div>
+                        </div>
+                        <div id="divContentAlert" class="sub-w3l" style="display: none;">
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <div id="divAlertMessage"></div>                              
                             </div>
                         </div>
                         <div class="right-w3l">
@@ -923,8 +928,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
         // });
     </script>
-    <script src="js/SmoothScroll.min.js"></script>
-    <!-- //smooth-scrolling-of-move-up -->
+    <!--
+        <script src="js/SmoothScroll.min.js"></script>
+
+        //smooth-scrolling-of-move-up -->
     <!-- Bootstrap core JavaScript
 ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
