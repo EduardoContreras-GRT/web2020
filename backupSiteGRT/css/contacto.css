@@ -1,0 +1,237 @@
+#contacto .tit-1 {
+    font-weight: bold;
+    color:#EB6419;
+    font-size: 16px;
+    text-align: center;
+}
+
+#contacto .sub-1 {
+    text-align: center;
+    margin-top: -5px;
+    font-size: 24px;
+    color: #3C3C3B;
+}
+
+#contacto .cuadrito {
+    text-align: center;
+    font-size: 13px;
+    color: #EB6419;
+    margin-top: -10px ;
+    margin-bottom: 25px;
+}
+
+#contacto .text-1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #747472;
+    margin: 0 15px 25px;
+    text-align: center;
+}
+
+#contacto .columna {
+    margin: 20px 0 0 10px;
+}
+
+#contacto h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    margin-top: -10px;
+    margin-left: -20px;
+    font-weight: 600;
+    color: #1786C8;
+}
+
+#contacto p {
+    font-family: 'Open Sans', sans-serif;
+    color: #747472;
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-left: -20px;
+    text-align: left;
+}
+
+#contacto .icon {
+    text-align: center;
+    transition: .5s all;
+}
+
+#contacto .icon span {
+    font-size: 18px;
+    border: 1px solid #1786C8;
+    padding: 12px;
+    color: #1786C8;   
+       
+}
+
+#contacto .icon span:hover {
+    color:#fff;
+    background: #EB6419;
+    border: 1px solid #EB6419;
+}
+
+#contacto .icon:hover {
+    
+	-webkit-transform: rotateY(360deg);
+	-moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+	-ms-transform: rotateY(360deg);
+    
+    transform: rotateY(360deg);	
+
+}
+
+#contacto a:hover {
+    text-decoration: none;
+
+}
+
+
+
+#contacto .contact-left input[type="text"],.contact-left input[type="email"]{
+	border:1px solid #a4d7f4;
+	font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+	color: #747472;
+	background: none;
+	width:100%;
+	padding: 10px 14px;
+	outline:none;
+}
+
+#contacto .contact-left input[type="text"]:hover,.contact-left input[type="email"]:hover,.contact-right textarea:hover{
+	border-color:#EB6419;	
+}
+
+#contacto .contact-right textarea{
+	border:1px solid #1786C8;
+	font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+	color: #747472;
+	background: none;
+	width: 100%;
+	padding: 10px 14px;
+	outline: none;
+    min-height: 120px;
+	resize: none;
+    margin-top: 24px;
+}
+
+#contacto .contact-left input[type="email"]{
+	margin: 24px 0;
+}
+
+
+#contacto .contact {
+    padding: 5em 0;
+}
+
+#contacto .map {
+    margin: 40px -15px 40px -15px;
+    text-align: center;
+    justify-content: center!important;
+    
+}
+
+
+/*-------BOTON ENVIAR---------*/
+
+#contacto .contact-right input[type="submit"] { 
+    padding: .6em 1em;
+    color: #fff;
+    font-size: 16px;
+    background: #1786C8; 
+    
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+	transition: 0.5s all;
+    
+    outline: none;
+    margin: 16px 0 0;
+    width: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#contacto .contact-right input[type="submit"]:hover{
+    background: #EB6419;	
+	color: #fff;
+}
+
+/*-------------------------------------------*/
+
+#contacto .mensaje-exito {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contacto .tit-mensaje {
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contacto .mensaje-exito a {
+    display: block;
+    flex-direction: column;
+    padding: 10px 30px;
+    background: #1786C8;
+    text-decoration: none;
+    color: #fff;
+}
+
+#contacto .mensaje-exito a:hover {
+    background: #EB6419;
+}
+
+#contacto iframe {
+    width: 100%;
+    height: 300px;
+}
+
+
+
+/*------------RESPONSIVE------------*/
+
+@media (min-width:480px) {
+    #contacto h5 {
+        margin-left: -40px;
+    }
+
+    #contacto p {
+        margin-left: -40px;
+    }
+}
+
+@media (min-width:768px) {
+    
+    #contacto h5 {
+        margin-left: -30px;
+    }
+    
+    #contacto p {
+        margin-left: -30px;
+    }
+    
+    #contacto .contact-right textarea {
+        margin-top: 0;
+    }
+}
+
+@media (min-width:1024px) {
+    #contacto h5 {
+        margin-left: -40px;
+    }
+
+    #contacto p {
+        margin-left: -40px;
+    }
+}
+
+/*------------RESPONSIVE------------*/

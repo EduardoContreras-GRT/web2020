@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.grt.mx/</loc>
+  <lastmod>2017-01-03T22:46:46+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.grt.mx/clientes.html</loc>
+  <lastmod>2017-01-03T18:19:29+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.grt.mx/descargas.html</loc>
+  <lastmod>2017-01-03T18:15:41+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.grt.mx/boletines.html</loc>
+  <lastmod>2017-01-03T18:15:36+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.grt.mx/testimoniales.html</loc>
+  <lastmod>2017-01-03T18:15:48+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.grt.mx/index.html</loc>
+  <lastmod>2017-01-03T22:46:46+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.grt.mx/descargas/grt_descargas_caracol_20170102.pdf</loc>
+  <lastmod>2017-01-02T15:55:01+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>

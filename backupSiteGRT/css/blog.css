@@ -1,0 +1,99 @@
+#blog .tit-1 {
+    font-weight: bold;
+    color:#EB6419;
+    font-size: 16px;
+    text-align: center;
+}
+
+#blog .sub-1 {
+    text-align: center;
+    margin-top: -5px;
+    font-size: 24px;
+    color: #3C3C3B;
+}
+
+#blog .cuadrito {
+    text-align: center;
+    font-size: 13px;
+    color: #EB6419;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+#blog img {
+    width: 100%;
+}
+
+#blog .bg-img {
+    background: url(../images/blog_ventas-grt.png) no-repeat center;
+    background-attachment: fixed;
+    background-size:cover;
+    width: 100%;
+    padding: 60px;
+    text-align: center;
+}
+
+
+/*-------EFECTOS BOTONES CURSOS ONLINE---------*/
+
+#blog .animated-button:link, .animated-button:visited {
+	position: relative;
+    padding: 10px;
+    width: 230px;
+    color: #fff;
+	font-size: 13px;
+	text-align: center;
+	text-decoration: none;
+	overflow: hidden;
+    margin: 0;
+	border-radius: 0;
+	z-index: 15;
+
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+#blog .animated-button:link:after, .animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+    
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+
+#blog .animated-button:link:hover, .animated-button:visited:hover {
+	color: #fff;
+    border: 1px solid #EB6419 !important;
+}
+
+#blog .animated-button:link:hover:after, .animated-button:visited:hover:after {
+	height: 450%;
+}
+
+/* Victoria Buttons */
+
+#blog .animated-button.victoria-two {
+	border: 1px solid #fff;
+
+}
+#blog .animated-button.victoria-two:after {
+	background: #EB6419;
+    
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+
+/*-------------------------------------------*/
+
+

@@ -1,0 +1,122 @@
+#pie .bg-gray {
+    background: #3C3C3B;
+    width: 100%;
+    padding: 30px 60px;
+}
+
+#pie .tit-2 {
+    text-align: center;
+    font-weight: bold;
+    color:#EB6419;
+    font-size: 16px;
+}
+
+#pie .sub-2 {
+    text-align: center;
+    margin-top: -5px;
+    color: #fff;
+    font-size: 24px;
+}
+
+#pie .cuadrito {
+    text-align: center;
+    font-size: 13px;
+    color: #EB6419;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+#pie .redes {
+    text-align: center;
+    font-size: 28px;
+}
+
+#pie .redes a {
+    display: inline-block;
+    vertical-align: text-top;
+    padding: 6px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    transition: all 0.4s;
+    border: 1px solid #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 22px;
+    font-size: 14px;
+    
+}
+
+.facebook a:hover {
+    background: #3b5998;
+    border: 1px solid #3b5998 !important;  
+}
+
+.twitter a:hover {
+    background: #1da1f2;
+    border: 1px solid #1da1f2 !important;
+}
+
+.youtube a:hover {
+    background: #bb0000;
+    border: 1px solid #bb0000 !important;
+}
+
+.instagram a:hover {
+    background: #bc2a8d;
+    border: 1px solid #bc2a8d !important;
+}
+
+#pie .bg-gblack{
+    background: #262626;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#pie .copy {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+}
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 2%;
+    overflow: hidden;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-indent: 100%;
+    background: rgba(10,62,92) url(../images/move_up.png) no-repeat 11px 11px;
+}
+
+#toTopHover {
+    width: 40px;
+    height: 40px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+
+/*------------RESPONSIVE------------*/
+
+@media (min-width:480px) {
+    #pie .redes a {
+        width: 45px;
+        height: 45px;
+        line-height: 32px;
+        font-size: 18px;
+    }
+}  
+
+/*------------RESPONSIVE------------*/

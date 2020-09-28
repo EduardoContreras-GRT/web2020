@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    </head>
+    <body>
+
+        <div id="myTable" class="col-md-10">
+
+        </div>
+
+        <script>
+
+            $(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "registerList.php",
+                    data: {
+                        accion: "getAllAsist"
+                    },
+                    async: false,
+                    dataType: "json",
+                    beforeSend: function () {
+                    },
+                    success: function (datos) {
+                        if (datos != "") {
+                            if (datos.status == "success") {
+                                var tbl = "<h2>Total de Asistentes: <b>" + datos.totalCount + "</b></h2><br/><br/><table class='table table-striped'>";
+                                tbl += "<thead>";
+                                tbl += "<th>Nombre</th>";
+                                tbl += "<th>Tel&eacute;fono</th>";
+                                tbl += "<th>Email</th>";
+                                tbl += "<th>Puesto</th>";
+                                tbl += "<th>Marca / Agencia</th>";
+                                tbl += "<th>fechaRegistro</th>";
+                                tbl += "</thead>";
+                                tbl += "<tbody>";
+                                $.each(datos.data, function (index, element) {
+                                    tbl += "<tr>";
+                                    tbl += "<td>" + element.nombreCompleto + "</td>";
+                                    tbl += "<td>" + element.telefono1 + "</td>";
+                                    tbl += "<td>" + element.email + "</td>";
+                                    tbl += "<td>" + element.puesto + "</td>";
+                                    tbl += "<td>" + element.marcaAgencia + "</td>";
+                                    tbl += "<td>" + element.fechaConfirmacion + "</td>";
+                                    tbl += "</tr>";
+                                });
+                                tbl += "</tbody>";
+
+                                $("#myTable").html(tbl);
+                            }
+                        }
+                    }, complete: function () {
+
+                    },
+                    error: function (objeto, quepaso, otroobj) {
+                    }
+                });
+            });
+
+        </script>
+
+    </body>
+</html>

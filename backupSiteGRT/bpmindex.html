@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://webtracking-v01.bpmonline.com/JS/track-cookies.js"></script>
+        <script src="bpm.js"></script>
+
+        <script>
+            /**
+             * Replace the "css-selector" placeholders in the code below with the element selectors on your landing page.
+             * You can use #id or any other CSS selector that will define the input field explicitly.
+             * Example: "Email": "#MyEmailField".
+             * If you don't have a field from the list below placed on your landing, leave the placeholder or remove the line.
+             */
+            var config = {
+                fields: {
+                    "Subject": "#subject-field", // Case subject
+                    "Email": "#email-field", // Visitor's email
+                    "Name": "#name-field", // Visitor's name code
+                    "Phone": "#Telefono", // Visitor's phone number
+                    "Symptoms": "#Symptoms" // Visitor's phone number
+                },
+                landingId: "ccc824df-327e-4664-a759-5c27ff62b70a",
+                serviceUrl: "https://008758-service-enterprise.bpmonline.com/0/ServiceModel/GeneratedObjectWebFormService.svc/SaveWebFormObjectData",
+                redirectUrl: ""
+            };
+            /**
+             * The function below creates a object from the submitted data.
+             * Bind this function call to the "onSubmit" event of the form or any other elements events.
+             * Example: <form class="mainForm" name="landingForm" onSubmit="createObject(); return false">
+             */
+            function createObject() {
+                landing.createObjectFromLanding(config);
+                console.log(config);
+            }
+        </script>
+
+        <!--Fin Integracion BpmOnline Tickets Reina Madre -->
+
+    </head>
+    <body>
+        <div>Bpm test</div>
+        
+        <button onclick="createObject()">Click</button>
+        
+    </body>
+</html>

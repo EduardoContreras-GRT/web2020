@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Banco</title>
+        <meta charset="ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div>
+
+            <table>
+                <tr>
+                    <td>Id</td>
+                    <td><input type="text" id="txtId" name="txtId" ></td>
+                </tr>
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type="text" id="txtNombre" name="txtNombre" ></td>
+                </tr>
+                <tr>
+                    <td>Paterno</td>
+                    <td><input type="text" id="txtPaterno" name="txtPaterno" ></td>
+                </tr>
+                <tr>
+                    <td>Materno</td>
+                    <td><input type="text" id="txtMaterno" name="txtMaterno" ></td>
+                </tr>
+                <tr>
+                    <td>Núm Cta</td>
+                    <td><input type="text" id="txtNumCta" name="txtNumCta" ></td>
+                </tr>
+                <tr>
+                    <td>Activo</td>
+                    <td>
+                        <select id="cmbActivo">
+                            <option value="S">Si</option>
+                            <option value="N">No</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="button" value="Guardar" onclick="save()">
+                                    <input type="button" value="Limpiar" onclick="limpiar">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>                    
+                </tr>
+            </table>                       
+        </div>
+
+        <div id="divResultados">
+
+        </div>
+
+    </body>
+
+    <script type="text/javascript">
+
+
+        save = function () {
+
+            $.ajax({
+                type: "POST",
+                url: "model.php",
+                data: {
+                    accion: "Save",
+                    txtNombre: $("#txtNombre"),
+                    txtPaterno: $("#txtPaterno"),
+                    txtMaterno: $("#txtMaterno"),
+                    txtNumCta: $("#txtNumCta"),
+                    cmbActivo: $("#cmbActivo")
+                },
+                async: false,
+                dataType: "json",
+                beforeSend: function () {
+                },
+                success: function (datos) {
+                    if (datos != "") {
+                        $("#divResultados").html(datos);
+                        colsulta();
+                    } else {
+                        $("#divResultados").html("Sin Resultados");
+                    }
+                }, complete: function (datos) {
+                    if (datos != "") {
+                        $("#divResultados").html(datos);
+                        colsulta();
+                    } else {
+                        $("#divResultados").html("Sin Resultados");
+                    }
+                },
+                error: function (objeto, quepaso, otroobj) {
+                    $("#divResultados").html("Error");
+                }
+            });
+
+        };
+
+        update = function () {
+
+            $.ajax({
+                type: "POST",
+                url: "model.php",
+                data: {
+                    accion: "Update",
+                    txtId: $("#txtId"),
+                    txtNombre: $("#txtNombre"),
+                    txtPaterno: $("#txtPaterno"),
+                    txtMaterno: $("#txtMaterno"),
+                    txtNumCta: $("#txtNumCta"),
+                    cmbActivo: $("#cmbActivo")
+                },
+                async: false,
+                dataType: "json",
+                beforeSend: function () {
+                },
+                success: function (datos) {
+                    if (datos != "") {
+                        $("#divResultados").html(datos);
+                        colsulta();
+                    } else {
+                        $("#divResultados").html("Sin Resultados");
+                    }
+                }, complete: function (datos) {
+                    if (datos != "") {
+                        $("#divResultados").html(datos);
+                        colsulta();
+                    } else {
+                        $("#divResultados").html("Sin Resultados");
+                    }
+                },
+                error: function (objeto, quepaso, otroobj) {
+                    $("#divResultados").html("Error");
+                }
+            });
+
+        };
+        
+        Delete = function () {
+
+            $.ajax({
+                type: "POST",
+                url: "model.php",
+                data: {
+                    accion: "Delete",
+                    txtId: $("#txtId"),                    
+                    cmbActivo: "N"
+                },
+                async: false,
+                dataType: "json",
+                beforeSend: function () {
+                },
+                success: function (datos) {
+                    if (datos != "") {
+                        $("#divResultados").html(datos);
+                        colsulta();
+                    } else {
+                        $("#divResultados").html("Sin Resultados");
+                    }
+                }, complete: function (datos) {
+                    if (datos != "") {
+                        $("#divResultados").html(datos);
+                        colsulta();
+                    } else {
+                        $("#divResultados").html("Sin Resultados");
+                    }
+                },
+                error: function (objeto, quepaso, otroobj) {
+                    $("#divResultados").html("Error");
+                }
+            });
+
+        };
+
+        colsulta = function () {
+            $.ajax({
+                type: "POST",
+                url: "model.php",
+                data: {
+                    accion: "Select"
+                },
+                async: true,
+                dataType: "json",
+                beforeSend: function () {
+                },
+                success: function (datos) {
+                    if (datos != "") {
+                        $("#divResultados").html(datos);
+                    } else {
+                        $("#divResultados").html("Sin Resultados");
+                    }
+                }, complete: function (datos) {
+                    if (datos != "") {
+                        $("#divResultados").html(datos);
+                    } else {
+                        $("#divResultados").html("Sin Resultados");
+                    }
+                },
+                error: function (objeto, quepaso, otroobj) {
+                    $("#divResultados").html("Error");
+                }
+            });
+        }
+
+
+        $(function () {
+            colsulta();
+        });
+
+
+    </script>
+
+</html>

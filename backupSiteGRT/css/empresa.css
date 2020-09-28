@@ -1,0 +1,154 @@
+#empresa {
+    text-align: center;
+}
+
+#empresa img {
+    width:20%;
+    margin-bottom: 20px;
+}
+
+#empresa .tit-1 {
+    font-weight: bold;
+    color:#EB6419;
+    font-size: 16px;
+}
+
+#empresa .sub-1 {
+    text-align: center;
+    margin-top: -5px;
+    font-size: 24px;
+    color: #3C3C3B;
+}
+
+#empresa .cuadrito {
+    text-align: center;
+    font-size: 13px;
+    color: #EB6419;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+#empresa .text-1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #747472;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/*Características*/
+
+#empresa .bg-img {
+    background: url(../images/conferencia-medellin-grahamross.png) no-repeat center;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    padding: 150px 0;
+    max-height: 200px;
+    
+}
+
+#empresa .bg-gris {
+    background: #fff;
+    width: 100%;
+    padding: 30px 60px;
+}
+
+#empresa .feat {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    color: #EB6419;
+    font-weight: 700;    
+}
+
+#empresa .icon {
+    text-align: center;
+    font-size: 40px;
+    color: #EB6419;
+    font-weight: 500;
+}
+
+/*Alcance*/
+
+#empresa .bg-blue {
+    background: rgba(10,62,92);
+    width: 100%;
+    padding: 30px 60px;
+}
+
+
+#empresa .tit-2{
+    text-align: center;
+    font-weight: bold;
+    color:#EB6419;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#empresa .sub-2 {
+    text-align: center;
+    margin-top: -5px;
+    color: #fff;
+    font-size: 24px;
+}
+
+#empresa .text-2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 25px 30px 25px;
+}
+
+#empresa .block i {
+    display: block;
+    font-size: 40px;
+    line-height: 1;
+    padding-bottom: 5px;
+    color: #EB6419;
+}
+
+#empresa .count-tit {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+#empresa .count-num {
+    text-align: center;
+    font-size: 30px;
+    color: #EB6419;
+}
+
+#empresa .count-text{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+
+/*------------RESPONSIVE------------*/
+
+@media (min-width:480px){
+    
+    #empresa .descripcion {
+        padding: 0 48px;
+    }  
+}
+
+@media (min-width:768px) {
+    
+    #empresa .descripcion{
+        padding: 0 24px;
+    } 
+}
+
+/*------------RESPONSIVE------------*/
